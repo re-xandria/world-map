@@ -1,0 +1,14 @@
+.row {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column1 {
+    width: 70vw;
+}
+
+.column2 {
+    display: inline;
+    width: 30vw;
+    padding: 1rem 3rem;
+}

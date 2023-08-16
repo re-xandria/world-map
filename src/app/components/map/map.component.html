@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="column1">
+      <app-map-image (pathSelect)="loadCountryData($event)"></app-map-image>
+    </div>
+    <div class="column2">
+        <h1>Country Data</h1>
+        <ul class="map-info-list">
+            <li *ngFor="let c of country?.data || []">{{ c }}</li>
+        </ul>
+    </div>
+</div>
+  
