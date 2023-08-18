@@ -14,7 +14,7 @@ export class MapImageComponent {
     area.forEach(item => {
       item.addEventListener('mouseenter', (event: MouseEvent) =>
       this.mouseHover.emit({
-        code: (event.target as HTMLDivElement).setAttribute("fill", "purple"),
+        code: (event.target as HTMLDivElement).setAttribute("fill", "#e9edc9"),
         name: (event.target as HTMLDivElement).setAttribute("opacity", "1.0")
       })
       );
@@ -23,7 +23,7 @@ export class MapImageComponent {
     area.forEach(item => {
       item.addEventListener('mouseleave', (event: MouseEvent) =>
       this.mouseHover.emit({
-        code: (event.target as HTMLDivElement).setAttribute("fill", "black"),
+        code: (event.target as HTMLDivElement).setAttribute("fill", "#ccd5ae"),
         name: (event.target as HTMLDivElement).setAttribute("opacity", "1.0")
       })
       );

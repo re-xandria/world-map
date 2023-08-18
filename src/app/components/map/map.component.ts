@@ -14,18 +14,26 @@ export class MapComponent {
   };
 
   constructor(private DataService: DataService) { } loadCountryData(e: any) {
+    
+    let country: string = "Country: ";
+    let capital: string = "Capital: ";
+    let region: string = "Region: ";
+    let income: string = "Income Level: ";
+    let longitude: string = "Longitude: ";
+    let latitude: string = "Latitude: ";
+
     this.country.name = e.name; 
     this.DataService
     .getCountry(e.code)
     .pipe(take(1))
     .subscribe((response: any) => {
     this.country.data = [
-    "Country: " + response[1][0].name,
-    "Capital: " + response[1][0].capitalCity,
-    "Region: " + response[1][0].region.value,
-    "Income Level: " + response[1][0].incomeLevel.value,
-    "Longitude: " + response[1][0].longitude,
-    "Latitude: " + response[1][0].latitude
+    country + response[1][0].name,
+    capital + response[1][0].capitalCity,
+    region + response[1][0].region.value,
+    income + response[1][0].incomeLevel.value,
+    longitude + response[1][0].longitude,
+    latitude + response[1][0].latitude
     ]}
   )}
 }

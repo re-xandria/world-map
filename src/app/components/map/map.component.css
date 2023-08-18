@@ -1,14 +1,31 @@
 .row {
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5rem 2rem;
+    height: 100%;
+    overflow: hidden;
 }
 
 .column1 {
-    width: 70vw;
+    width: 70%;
+    padding: 1rem 3rem;
 }
 
 .column2 {
+    margin: 15% 5%;
+    text-align: center;
     display: inline;
-    width: 30vw;
+    width: 30%;
+    height: 25vh;
     padding: 1rem 3rem;
+    font-size: .8rem;
+    border: solid 5px #faedcd;
+    border-radius: 8px;
+    background-color: #fefae0;
+}
+.map-info-list {
+    list-style-type: none;
+    position: relative;
+    right: 20px;
+    line-height: 2;
 }
