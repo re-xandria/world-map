@@ -1,27 +1,73 @@
-# WorldMap
+# Interactive World Map
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## Overview
 
-## Development server
+This project aims to enhance a website by integrating a visual interface for a scalable vector graphic (SVG) map of the world. Utilizing the Angular JavaScript framework and various APIs, this application allows users to interact with the map and retrieve detailed information about each country, thereby enriching the user experience and making geographical data more accessible.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Table of Contents
 
-## Code scaffolding
+- [Introduction](#introduction)
+- [Scenario](#scenario)
+- [Requirements](#requirements)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [Future Work](#future-work)
+- [License](#license)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Introduction
 
-## Build
+As a software engineer, I frequently enhance website functionality using JavaScript and frameworks. This project demonstrates these skills by creating an interactive Angular component that displays a world map in SVG format, highlighting each country upon mouse events and connecting to APIs for comprehensive country information.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Scenario
 
-## Running unit tests
+In this project, I expanded an existing website related to a geographic area in the United States to include a world map. The task involved presenting the map in SVG format and integrating it with API services to provide details about each country, allowing users to interactively explore global information.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Requirements
 
-## Running end-to-end tests
+- **SVG Map**: Identify an SVG map of the world for the project.
+- **API Integration**: Use GeoNames or Worldbank API to gather specific country information, including:
+  - Country name
+  - Country capital
+  - Country region
+  - Income level
+  - Two additional properties of my choice
+- **Routing**: Assign the map component to the default URL using Angular's routing module.
+- **HTML Layout**: Create a two-column layout, one for the map and another for displaying country information.
+- **Interactive Component**: Convert the SVG map into an interactive Angular component that handles mouse events.
+- **API Service**: Implement an API service using Angular's HTTP client to fetch country data based on user interaction.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies Used
 
-## Further help
+- **Angular**: For building the interactive web application.
+- **SVG**: For the scalable vector graphic representation of the world map.
+- **GeoNames / Worldbank APIs**: To retrieve country data.
+- **Visual Studio Code**: For development.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Setup Instructions
+
+1. Clone the repository:
+    ```bash
+    git clone [REPO_URL]
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd [PROJECT_NAME]
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    ng serve
+    ```
+
+## Future Work
+
+- **Enhance API Integration**: Add more endpoints to gather additional country data.
+- **User Experience Improvements**: Improve the interactivity and visual appeal of the map.
+- **Responsive Design**: Ensure the application is fully responsive on various devices.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
